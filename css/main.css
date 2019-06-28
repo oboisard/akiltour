@@ -1,8 +1,15 @@
 body {
-  height:100vh;
-  overflow:hidden;
+  background-image: url(./img/affiche_pel2019.jpg);
+  background-size: cover;
+}
+.page {
+  display:flex;
+  flex-direction: column;
+  height: 100vh;
 }
 header {
+  position:relative;
+  z-index:3;
 }
 header nav {
   padding-left: 15%!important;
@@ -11,41 +18,59 @@ header img {
   height: 150px;
 }
 footer {
-
+  position: relative;
+  width: 100%;
+  z-index: 3;
 }
 footer img {
   height: 150px;
   float:right;
   margin-bottom: 20px;
-  margin-right: 80px;
-}
-header img {
-  height: 150px;
+  margin-right: 40px;
 }
 .green {
+  position:fixed;
+  overflow:hidden;
+  top:0;
+  left:0;
+  height:100vh;
+  width:30%;
+}
+.green:before {
+  display:block;
   background: #ccd560;
   position: absolute;
-  width: 30%;
+  width: 100%;
   height: 200vh;
   top: -50px;
   left: -50px;
   z-index: 1;
   transform: rotate(-10deg);
+  content: ' ';
 }
 .orange {
+  position:fixed;
+  overflow:hidden;
+  bottom:0;
+  left:0;
+  height:40%;
+  width:100%;
+}
+.orange:before {
   background: #dc911c;
   position: absolute;
-  height: 40%;
+  height: 100%;
   width: 200%;
   bottom: -100px;
   left: -100px;
   z-index: 1;
   transform: rotate(-10deg);
+  content: ' ';
 }
 .body {
-  padding-top:200px;
   z-index: 3;
   position: relative;
+  flex:1;
 }
 h1, h2 {
   position:absolute;
@@ -53,7 +78,7 @@ h1, h2 {
 }
 h3 {
   color:#201c70;
-  font-size: 48px;
+  font-size: 34px;
   font-weight: bold;
 }
 h4 {
@@ -65,7 +90,7 @@ h4 {
 
 }
 .content img {
-  height: 200px;
+  height: 160px;
   float: left;
 }
 .docs {
