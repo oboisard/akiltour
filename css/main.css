@@ -109,6 +109,11 @@ h4 {
 .docs h5 {
   text-align:left;
 }
+@media screen and (max-width: 640px) {
+  .docs h4 {
+    display:none;
+  }
+}
 .docs .row > div {
   margin:8px 0;
   border:0px solid #CCCCCC;
