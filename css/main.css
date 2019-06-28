@@ -2,8 +2,22 @@ body {
   height:100vh;
   overflow:hidden;
 }
+header {
+}
 header nav {
   padding-left: 15%!important;
+}
+header img {
+  height: 150px;
+}
+footer {
+
+}
+footer img {
+  height: 150px;
+  float:right;
+  margin-bottom: 20px;
+  margin-right: 80px;
 }
 header img {
   height: 150px;
@@ -30,8 +44,50 @@ header img {
 }
 .body {
   padding-top:200px;
+  z-index: 3;
+  position: relative;
 }
 h1, h2 {
   position:absolute;
   top:-1000px;
+}
+h3 {
+  color:#201c70;
+  font-size: 48px;
+  font-weight: bold;
+}
+h4 {
+  color:#201c70;
+  font-size: 28px;
+  font-weight: bold;
+}
+.content {
+
+}
+.content img {
+  height: 200px;
+  float: left;
+}
+.docs {
+  
+}
+.docs button {
+  display:none!important;
+}
+.docs h5 {
+  text-align:left;
+}
+.docs .row > div {
+  margin:8px 0;
+  border:0px solid #CCCCCC;
+  border-bottom:1px;
+  text-align:center;
+}
+
+.theta .btn-primary {
+  color: #201c70;
+  border-color: #201c70;
+}
+.theta .btn-primary:before {
+  background-color: rgba(32, 28, 112, 0.4);
 }
