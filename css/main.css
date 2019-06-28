@@ -1,3 +1,37 @@
-.header img {
-  height: 20vh;
+body {
+  height:100vh;
+  overflow:hidden;
+}
+header nav {
+  padding-left: 15%!important;
+}
+header img {
+  height: 150px;
+}
+.green {
+  background: #ccd560;
+  position: absolute;
+  width: 30%;
+  height: 200vh;
+  top: -50px;
+  left: -50px;
+  z-index: 1;
+  transform: rotate(-10deg);
+}
+.orange {
+  background: #dc911c;
+  position: absolute;
+  height: 40%;
+  width: 200%;
+  bottom: -100px;
+  left: -100px;
+  z-index: 1;
+  transform: rotate(-10deg);
+}
+.body {
+  padding-top:200px;
+}
+h1, h2 {
+  position:absolute;
+  top:-1000px;
 }
