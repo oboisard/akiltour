@@ -14,8 +14,14 @@ header {
 header nav {
   padding-left: 15%!important;
 }
+@media screen and (max-width: 640px) {
+  header nav {
+    padding: 0%!important;
+  }
+}
 header img {
-  height: 150px;
+  max-height: 140px;
+  max-width: 90vh;
 }
 footer {
   position: relative;
