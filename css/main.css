@@ -2,7 +2,7 @@
 @import url('./main_v2.css');
 
 body {
-  background-image: url(./img/affiche_pel2019.jpg);
+  background-image: none;
   background-size: cover;
 }
 .page {
